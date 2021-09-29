@@ -4,8 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
+    <style>
+      table{
+        border-collapse: collapse;
+        background-color: beige;
+      }
+        table,tr,td,th{
+          border: 1px solid;
+          padding: 10px;
+          font-size: 22px;
+          text-align: center;
+        }
+        th{
+          background-color: aquamarine;
+          text-transform: uppercase;
+          padding: 30px;
+        }
+        td:nth-child(5n+1){
+          background-color:rgb(238, 233, 163);
+        }
+        td:nth-child(5n+2){
+          background-color:rgb(182, 241, 182);
+        }
+        td:nth-child(5n+3){
+          background-color:rgb(238, 145, 145);
+        }
+        td:nth-child(5n+4){
+          background-color: rgb(240, 190, 130);
+        }
+        td:nth-child(5n+5){
+          background-color:lightgrey;
+        }
+        td i:hover{
+          color: darkmagenta;
+        }
+        table tr td a{
+          text-decoration: none;
+          color: midnightblue;
+        }
+    </style>
   </head>
+  
   <body
     style="
       background-color: rgb(
@@ -13,68 +54,133 @@
         rgb(102, 0, 128),
         rgb(255, 217, 0)
       );
+      width: 100%;
     "
   >
-    <h1 style="text-align: center; background-color: chocolate;">
+    <h1 style="text-align: center; background-color: chocolate; font-size: 45px;">
       Practicals list
     </h1>
-
-    <p>
-      Practical 1 : Create a web page using html code editor and sandbox online
-      code editor
-      <a href="./practical1.html">Link for Practical 1 </a>
-    </p>
-    <p>
-      Practical 2 : Create a web page showing output as Html Structure using
-      character Entities and span Tag
-      <a href="./Practical2.html">
-        Link for Practical 2
-      </a>
-    </p>
-    <p>
-      Practical 3 : Live your First Web-Page on Git-Hub
-      <a href="C:\Users\This PC\Desktop\FullstackGithub\FullStackPractical-3">
-        Link for Practical 3
-      </a>
-    </p>
-    <p>
-      Practical 4 : Create a website having list of all practical and their
-      individual practical Page links
-      <a href="./index.html">
-        Link for Practical 4
-      </a>
-    </p>
-    <p>
-      Practical 5 :Create a Web-Page showing the use of Image-Map in the Web
-      Application.
-      <a href="./practical5.html">
-        Link for Practical 5
-      </a>
-    </p>
-    <p>
-      Practical 6 : Create a Card Layout using CSS layout properties.
-      <a href="./practical6.html"> Link for Practical 6</a>
-    </p>
-    <p>
-      Practical 7 : Create a Web Page Layout using div tags.
-      <a href="./practical7.html"> Link for Practical 7</a>
-    </p>
-    <p>
-      Practical 8 : Create a Fixed navigation bar with proper section linking.
-      <a href="./practical8.html"> Link for Practical 8</a>
-    </p>
-    <p>
-      Practical 9 : Copy the content of the practical 8, Create a new file named
-      Practical-9 and make it responsive.
-      <a href="./practical9.html"> Link for Practical 9</a>
-    </p>
-    <p>
-      Practical 10 : Make responsive Side-bar Navigation menu as per the layout.
-      <a href="./practical10.html"> Link for Practical 10</a>
-    </p>
-    <p>
-      Practical 11 : Create a Responsive Footer Template.
-      <a href="./practical11.html"> Link for Practical 11</a>
-    </p>
+    <table width="1200px" height="800px" align="center">
+      <!-- <caption>List</caption> -->
+      <thead>
+      <tr>
+        <th>Practicals</th>
+        <th>Aim</th>
+        <th>Links</th>
+        <th>Submit/Unsubmit</th>
+        <th> Icons</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      
+        <td>Practical 1</td>
+        <td>
+          Create a web page using html code editor and sandbox online code
+          editor
+        </td>
+        <td><a href="./practical1.html">Practical 1 </a></td>
+        <td>Submitted</td>
+        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
+      </tr>
+      <tr>
+        <td>Practical 2</td>
+        <td>
+          Create a web page showing output as Html Structure using character
+          Entities and span Tag
+        </td>
+        <td>
+          <a href="./Practical2.html">
+            Practical 2
+          </a>
+        </td>
+        <td>Submitted</td>
+        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
+      </tr>
+      <tr>
+        <td>Practical 3</td>
+        <td>Live your First Web-Page on Git-Hub</td>
+        <td>
+          <a
+            href="C:\Users\This PC\Desktop\FullstackGithub\FullStackPractical-3"
+          >
+          Practical 3
+          </a>
+        </td>
+        <td>Submitted</td>
+          <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
+       
+      </tr>
+      <tr>
+        <td>Practical 4</td>
+        <td>
+          Create a website having list of all practical and their individual
+          practical Page links
+        </td>
+        <td>
+          <a href="./index.html">
+            Practical 4
+          </a>
+          
+        </td>
+        <td>Submitted</td>
+        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
+      </tr>
+      <tr>
+        <td>Practical 5</td>
+        <td>
+          Create a Web-Page showing the use of Image-Map in the Web Application.
+        </td>
+        <td>
+          <a href="./practical5.html">
+            Practical 5
+          </a>
+        </td>
+        <td>Submitted</td>
+        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
+      </tr>
+      <tr>
+        <td>Practical 6</td>
+        <td>Create a Card Layout using CSS layout properties.</td>
+        <td><a href="./practical6.html"> Practical 6</a></td>
+        <td>Submitted</td>
+        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
+      </tr>
+      <tr>
+        <td>Practical 7</td>
+        <td>Create a Web Page Layout using div tags.</td>
+        <td><a href="./practical7.html"> Practical 7</a></td>
+        <td>Submitted</td>
+        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
+      </tr>
+      <tr>
+        <td>Practical 8</td>
+        <td>Create a Fixed navigation bar with proper section linking.</td>
+        <td><a href="./practical8.html"> Practical 8</a></td>
+        <td>Submitted</td>
+        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
+      </tr>
+      <tr>
+         <td>Practical 9 </td><td> Copy the content of the practical 8, Create a new file
+        named Practical-9 and make it responsive.</td>
+        <td><a href="./practical9.html"> Practical 9</a></td>
+        <td>Submitted</td>
+        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
+      </tr>
+      <tr>
+        <td>Practical 10</td> <td>Make responsive Side-bar Navigation menu as per the
+        layout.</td> 
+        <td><a href="./practical10.html"> Practical 10</a></td>
+        <td>Submitted</td>
+        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
+      
+      <tr>
+        <td>Practical 11</td> <td> Create a Responsive Footer Template.</td>
+        <td><a href="./practical11.html"> Practical 11</a></td>
+        <td>Submitted</td>
+        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
+      </tr>
+    </tbody>
+    </table>
   </body>
 </html>
