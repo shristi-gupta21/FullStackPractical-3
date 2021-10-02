@@ -4,49 +4,79 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Document</title>
     <style>
-      table{
-        border-collapse: collapse;
-        background-color: beige;
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
       }
-        table,tr,td,th{
-          border: 1px solid;
-          padding: 10px;
-          font-size: 22px;
-          text-align: center;
-        }
-        th{
-          background-color: aquamarine;
-          text-transform: uppercase;
-          padding: 30px;
-        }
-        td:nth-child(5n+1){
-          background-color:rgb(238, 233, 163);
-        }
-        td:nth-child(5n+2){
-          background-color:rgb(182, 241, 182);
-        }
-        td:nth-child(5n+3){
-          background-color:rgb(238, 145, 145);
-        }
-        td:nth-child(5n+4){
-          background-color: rgb(240, 190, 130);
-        }
-        td:nth-child(5n+5){
-          background-color:lightgrey;
-        }
-        td i:hover{
-          color: darkmagenta;
-        }
-        table tr td a{
-          text-decoration: none;
-          color: midnightblue;
-        }
+      table {
+        border-collapse: collapse;
+        /* background-color: beige; */
+        text-align: left;
+        width: 80%;
+        border-spacing: 0;
+        margin: 20px auto;
+        border-radius: 5px;
+        line-height: 20px;
+      }
+      table,
+      th {
+        border: 1px solid rgb(67, 67, 128);
+        padding: 10px;
+        font-size: 22px;
+      }
+      tr {
+        border: 2px solid lightgray;
+        padding: 10px;
+        font-size: 19px;
+      }
+      td {
+        padding: 15px;
+        font-size: 19px;
+      }
+
+      td i:hover {
+        color: blue;
+      }
+      td i {
+        color: grey;
+      }
+      table tr td a {
+        text-decoration: none;
+        color: gray;
+        text-align: center;
+      }
+      .heading {
+        color: white;
+        background-color: rgb(67, 67, 128);
+        padding: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      td:nth-child(5n + 2) {
+        width: 700px;
+        color: rgb(83, 70, 70);
+      }
+      td:nth-child(5n + 4) {
+        color: green;
+      }
+      td:nth-child(5n + 3) {
+        padding-left: 80px;
+      }
+      tbody tr:hover {
+        background-color: #f2f2f2;
+        cursor: default;
+      }
     </style>
   </head>
-  
+
   <body
     style="
       background-color: rgb(
@@ -57,130 +87,181 @@
       width: 100%;
     "
   >
-    <h1 style="text-align: center; background-color: chocolate; font-size: 45px;">
-      Practicals list
-    </h1>
-    <table width="1200px" height="800px" align="center">
-      <!-- <caption>List</caption> -->
+    <table width="1400px" align="center">
+      <!-- <caption>
+        List
+      </caption> -->
       <thead>
-      <tr>
-        <th>Practicals</th>
-        <th>Aim</th>
-        <th>Links</th>
-        <th>Submit/Unsubmit</th>
-        <th> Icons</th>
-        
-      </tr>
-    </thead>
-    <tbody>
-      
-        <td>Practical 1</td>
-        <td>
-          Create a web page using html code editor and sandbox online code
-          editor
+        <td colspan="5" class="heading">
+          <b>FullStack Live Practical Book</b>
         </td>
-        <td><a href="./practical1.html">Practical 1 </a></td>
-        <td>Submitted</td>
-        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
-      </tr>
-      <tr>
-        <td>Practical 2</td>
-        <td>
-          Create a web page showing output as Html Structure using character
-          Entities and span Tag
-        </td>
-        <td>
-          <a href="./Practical2.html">
-            Practical 2
-          </a>
-        </td>
-        <td>Submitted</td>
-        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
-      </tr>
-      <tr>
-        <td>Practical 3</td>
-        <td>Live your First Web-Page on Git-Hub</td>
-        <td>
-          <a
-            href="C:\Users\This PC\Desktop\FullstackGithub\FullStackPractical-3"
-          >
-          Practical 3
-          </a>
-        </td>
-        <td>Submitted</td>
-          <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
-       
-      </tr>
-      <tr>
-        <td>Practical 4</td>
-        <td>
-          Create a website having list of all practical and their individual
-          practical Page links
-        </td>
-        <td>
-          <a href="./index.html">
-            Practical 4
-          </a>
-          
-        </td>
-        <td>Submitted</td>
-        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
-      </tr>
-      <tr>
-        <td>Practical 5</td>
-        <td>
-          Create a Web-Page showing the use of Image-Map in the Web Application.
-        </td>
-        <td>
-          <a href="./practical5.html">
-            Practical 5
-          </a>
-        </td>
-        <td>Submitted</td>
-        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
-      </tr>
-      <tr>
-        <td>Practical 6</td>
-        <td>Create a Card Layout using CSS layout properties.</td>
-        <td><a href="./practical6.html"> Practical 6</a></td>
-        <td>Submitted</td>
-        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
-      </tr>
-      <tr>
-        <td>Practical 7</td>
-        <td>Create a Web Page Layout using div tags.</td>
-        <td><a href="./practical7.html"> Practical 7</a></td>
-        <td>Submitted</td>
-        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
-      </tr>
-      <tr>
-        <td>Practical 8</td>
-        <td>Create a Fixed navigation bar with proper section linking.</td>
-        <td><a href="./practical8.html"> Practical 8</a></td>
-        <td>Submitted</td>
-        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
-      </tr>
-      <tr>
-         <td>Practical 9 </td><td> Copy the content of the practical 8, Create a new file
-        named Practical-9 and make it responsive.</td>
-        <td><a href="./practical9.html"> Practical 9</a></td>
-        <td>Submitted</td>
-        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
-      </tr>
-      <tr>
-        <td>Practical 10</td> <td>Make responsive Side-bar Navigation menu as per the
-        layout.</td> 
-        <td><a href="./practical10.html"> Practical 10</a></td>
-        <td>Submitted</td>
-        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
-      
-      <tr>
-        <td>Practical 11</td> <td> Create a Responsive Footer Template.</td>
-        <td><a href="./practical11.html"> Practical 11</a></td>
-        <td>Submitted</td>
-        <td><i class="fa fa-pencil-square-o"></i><i class="fa fa-trash-o"></i></td>
-      </tr>
-    </tbody>
+
+        <tr>
+          <td><b>#</b></td>
+          <td><b>Practical Name</b></td>
+          <td><b>Link</b></td>
+          <td style="color: black;"><b>Status</b></td>
+          <td><b>Tools</b></td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>
+            Create Your First Web page using: 1. HTML Editor 2. Online Sandbox
+            Environment. In the content, write "About Fullstack Web
+            Development".
+          </td>
+          <td><a href="./practical1.html">Practical-1</a></td>
+          <td>Checked</td>
+          <td>
+            <i title="Edit" class="fa fa-pencil-square-o"></i>
+            <i title="Delete" class="fa fa-trash-o"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>
+            Create a web page showing output as Html Structure using character
+            Entities and span Tag.
+          </td>
+          <td>
+            <a href="./Practical2.html">Practical-2</a>
+          </td>
+          <td>Checked</td>
+          <td>
+            <i title="Edit" class="fa fa-pencil-square-o"></i>
+            <i title="Delete" class="fa fa-trash-o"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Live your First Web-Page on Git-Hub</td>
+          <td>
+            <a
+              href="C:\Users\This PC\Desktop\FullstackGithub\FullStackPractical-3"
+              >Practical-3</a
+            >
+          </td>
+          <td>Checked</td>
+          <td>
+            <i title="Edit" class="fa fa-pencil-square-o"></i>
+            <i title="Delete" class="fa fa-trash-o"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>
+            Create a website having list of all practical and their individual
+            practical Page links .
+          </td>
+          <td>
+            <a href="./index.html">Practical-4</a>
+          </td>
+          <td>Checked</td>
+          <td>
+            <i title="Edit" class="fa fa-pencil-square-o"></i>
+            <i title="Delete" class="fa fa-trash-o"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>
+            Create a Web-Page showing the use of Image-Map in the Web
+            Application.
+          </td>
+          <td>
+            <a href="./practical5.html">Practical-5</a>
+          </td>
+          <td>Checked</td>
+          <td>
+            <i title="Edit" class="fa fa-pencil-square-o"></i>
+            <i title="Delete" class="fa fa-trash-o"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Create a Card Layout using CSS layout properties.</td>
+          <td><a href="./practical6.html">Practical-6</a></td>
+          <td>Checked</td>
+          <td>
+            <i title="Edit" class="fa fa-pencil-square-o"></i>
+            <i title="Delete" class="fa fa-trash-o"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Create a Web Page Layout using div tags.</td>
+          <td><a href="./practical7.html">Practical-7</a></td>
+          <td>Checked</td>
+          <td>
+            <i title="Edit" class="fa fa-pencil-square-o"></i>
+            <i title="Delete" class="fa fa-trash-o"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>
+            Create a Web Page having Fixed Navigation Bar with the given
+            content.
+          </td>
+          <td><a href="./practical8.html">Practical-8</a></td>
+          <td>Checked</td>
+          <td>
+            <i title="Edit" class="fa fa-pencil-square-o"></i>
+            <i title="Delete" class="fa fa-trash-o"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>
+            Create a Responsive Web Layout with Responsive Navigation Bar.
+          </td>
+          <td><a href="./practical9.html">Practical-9</a></td>
+          <td>Checked</td>
+          <td>
+            <i title="Edit" class="fa fa-pencil-square-o"></i>
+            <i title="Delete" class="fa fa-trash-o"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Create a Responsive Side-Bar Navigation Menu.</td>
+          <td><a href="./practical10.html">Practical-10</a></td>
+          <td>Checked</td>
+          <td>
+            <i title="Edit" class="fa fa-pencil-square-o"></i>
+            <i title="Delete" class="fa fa-trash-o"></i>
+          </td>
+        </tr>
+
+        <tr>
+          <td>11</td>
+          <td>Create a Responsive Footer Template.</td>
+          <td><a href="./practical11.html">Practical-11</a></td>
+          <td>Checked</td>
+          <td>
+            <i title="Edit" class="fa fa-pencil-square-o"></i>
+            <i title="Delete" class="fa fa-trash-o"></i>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            12
+          </td>
+          <td>
+            Create a Table that represent Live Practical Book Records .
+          </td>
+          <td><a href="./index.html">Practical-12</a></td>
+          <td style="color: red;">
+            Un-Checked
+          </td>
+          <td>
+            <i title="Edit" class="fa fa-pencil-square-o"></i>
+            <i title="Delete" class="fa fa-trash-o"></i>
+          </td>
+        </tr>
+      </tbody>
     </table>
   </body>
 </html>
