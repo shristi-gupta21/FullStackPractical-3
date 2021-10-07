@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Practical 13</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: lightgrey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box {
+        width: 900px;
+        height: 700px;
+        background-color: white;
+        position: relative;
+        margin-top: 20px;
+      }
+      .heading {
+        color: black;
+        margin: 10px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+      }
+      table,
+      tr {
+        align-items: center;
+      }
+      td {
+        align-items: center;
+        font-size: 25px;
+      }
+      table {
+        margin-top: 8px;
+      }
+      .icons {
+        color: rgb(74, 235, 74);
+      }
+      .cross-icons {
+        color: rgb(241, 18, 18);
+      }
+      .heading2 {
+        color: blueviolet;
+        font-size: 35px;
+        background-color: rgb(203, 243, 203);
+        padding: 30px;
+      }
+      .amount {
+        color: green;
+      }
+      button {
+        background-color: purple;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 10px;
+      }
+      tr:nth-child(even) {
+        background-color: rgb(217, 248, 217);
+      }
+      .basic2 {
+        background-color: rgb(243, 233, 221);
+      }
+
+      .deluxe1 {
+        background-color: rgb(217, 236, 184);
+      }
+      .pro {
+        background-color: rgb(182, 228, 230);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h2 class="heading">
+        SELECT YOUR PLAN
+      </h2>
+      <table width=" 880px" align="center" height="650px ">
+        <thead>
+          <tr>
+            <td class="heading2 basic2" align="center">
+              <b>
+                <i class="fa fa-building" aria-hidden="true"></i>
+                Basic
+              </b>
+            </td>
+            <td class="heading2" align="center">
+              <b>
+                <i class="fa fa-superpowers" aria-hidden="true"></i>
+                Plus
+              </b>
+            </td>
+            <td class="heading2 deluxe1" align="center">
+              <b>
+                <i class="fa fa-telegram" aria-hidden="true"></i>
+                Deluxe
+              </b>
+            </td>
+            <td class="heading2 pro" align="center">
+              <b>
+                <i class="fa fa-tachometer" aria-hidden="true"></i>
+                Pro
+              </b>
+            </td>
+          </tr>
+        </thead>
+        <tr class="amount">
+          <td class="basic1" align="center">
+            Rs. 500\-
+          </td>
+          <td align="center">
+            Rs. 1500/-
+          </td>
+          <td align="center">
+            Rs. 2500\-
+          </td>
+          <td align="center">
+            Rs. 3500/-
+          </td>
+        </tr>
+        <tr>
+          <td class="basic2" align="center">
+            50 pages
+          </td>
+          <td align="center">
+            75 pages
+          </td>
+          <td class="deluxe1" align="center">
+            Unlimited
+          </td>
+          <td class="pro" align="center">
+            Unlimited
+          </td>
+        </tr>
+        <tr>
+          <td class="basic1" align="center">
+            3 Users
+          </td>
+          <td align="center">
+            5 Users
+          </td>
+          <td align="center">
+            Unlimited
+          </td>
+          <td align="center">
+            Unlimited
+          </td>
+        </tr>
+        <tr>
+          <td class="basic2" align="center">
+            10 Sites
+          </td>
+          <td align="center">
+            25 Sites
+          </td>
+          <td class="deluxe1" align="center">
+            100 Sites
+          </td>
+          <td class="pro" align="center">
+            Unlimited
+          </td>
+        </tr>
+        <tr>
+          <td class="basic1" align="center">
+            50 MB
+          </td>
+          <td align="center">
+            250 MB
+          </td>
+          <td align="center">
+            1 GB
+          </td>
+          <td align="center">
+            5 GB
+          </td>
+        </tr>
+        <tr>
+          <td class="basic2" align="center">
+            Included
+          </td>
+          <td align="center">
+            Included
+          </td>
+          <td class="deluxe1" align="center">
+            Included
+          </td>
+          <td class="pro" align="center">
+            Included
+          </td>
+        </tr>
+        <tr>
+          <td class="basic1" align="center">
+            <i class="fa fa-check icons" aria-hidden="true"></i>
+          </td>
+          <td align="center">
+            <i class="fa fa-check icons" aria-hidden="true"></i>
+          </td>
+          <td align="center">
+            <i class="fa fa-check icons" aria-hidden="true"></i>
+          </td>
+          <td align="center">
+            <i class="fa fa-check icons" aria-hidden="true"></i>
+          </td>
+        </tr>
+        <tr>
+          <td class="basic2" align="center">
+            <i class="fa fa-times cross-icons" aria-hidden="true"></i>
+          </td>
+          <td align="center">
+            <i class="fa fa-check icons" aria-hidden="true"></i>
+          </td>
+          <td class="deluxe1" align="center">
+            <i class="fa fa-check icons" aria-hidden="true"></i>
+          </td>
+          <td class="pro" align="center">
+            <i class="fa fa-check icons" aria-hidden="true"></i>
+          </td>
+        </tr>
+        <tr>
+          <td class="basic1" align="center">
+            <i class="fa fa-times cross-icons" aria-hidden="true"></i>
+          </td>
+          <td align="center">
+            <i class="fa fa-check icons" aria-hidden="true"></i>
+          </td>
+          <td align="center">
+            <i class="fa fa-check icons" aria-hidden="true"></i>
+          </td>
+          <td align="center">
+            <i class="fa fa-check icons" aria-hidden="true"></i>
+          </td>
+        </tr>
+        <tr>
+          <td class="basic2" align="center">
+            <i class="fa fa-times cross-icons" aria-hidden="true"></i>
+          </td>
+          <td align="center">
+            <i class="fa fa-times cross-icons" aria-hidden="true"></i>
+          </td>
+          <td class="deluxe1" align="center">
+            <i class="fa fa-check icons" aria-hidden="true"></i>
+          </td>
+          <td class="pro" align="center">
+            <i class="fa fa-check icons" aria-hidden="true"></i>
+          </td>
+        </tr>
+        <tr>
+          <td class="basic1" align="center">
+            <i class="fa fa-times cross-icons" aria-hidden="true"></i>
+          </td>
+          <td align="center">
+            <i class="fa fa-times cross-icons" aria-hidden="true"></i>
+          </td>
+          <td align="center">
+            <i class="fa fa-times cross-icons" aria-hidden="true"></i>
+          </td>
+          <td align="center">
+            <i class="fa fa-check icons" aria-hidden="true"></i>
+          </td>
+        </tr>
+        <tr>
+          <td class="basic2" align="center">
+            <button>
+              Sign Up
+            </button>
+          </td>
+          <td align="center">
+            <button>
+              Sign Up
+            </button>
+          </td>
+          <td class="deluxe1" align="center">
+            <button>
+              Sign Up
+            </button>
+          </td>
+          <td class="pro" align="center">
+            <button>
+              Sign Up
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
