@@ -74,6 +74,33 @@
         background-color: #f2f2f2;
         cursor: default;
       }
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 250px;
+
+        /* background-color: black; */
+      }
+      .loader {
+        border-radius: 50%;
+        border: 16px solid rgb(235, 194, 235);
+        border-top: 16px solid white;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .content {
+        display: none;
+      }
     </style>
   </head>
 
@@ -87,214 +114,228 @@
       width: 100%;
     "
   >
-    <table width="1400px" align="center">
-      <!-- <caption>
+    <div class="box" id="loader">
+      <div class="loader"></div>
+    </div>
+    <div class="content" id="content">
+      <table width="1400px" align="center">
+        <!-- <caption>
         List
       </caption> -->
-      <thead>
-        <td colspan="5" class="heading">
-          <b>FullStack Live Practical Book</b>
-        </td>
+        <thead>
+          <td colspan="5" class="heading">
+            <b>FullStack Live Practical Book</b>
+          </td>
 
-        <tr>
-          <td><b>#</b></td>
-          <td><b>Practical Name</b></td>
-          <td><b>Link</b></td>
-          <td style="color: black;"><b>Status</b></td>
-          <td><b>Tools</b></td>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>
-            Create Your First Web page using: 1. HTML Editor 2. Online Sandbox
-            Environment. In the content, write "About Fullstack Web
-            Development".
-          </td>
-          <td><a href="./practical1.html">Practical-1</a></td>
-          <td>Checked</td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>
-            Create a web page showing output as Html Structure using character
-            Entities and span Tag.
-          </td>
-          <td>
-            <a href="./Practical2.html">Practical-2</a>
-          </td>
-          <td>Checked</td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Live your First Web-Page on Git-Hub</td>
-          <td>
-            <a
-              href="C:\Users\This PC\Desktop\FullstackGithub\FullStackPractical-3"
-              >Practical-3</a
-            >
-          </td>
-          <td>Checked</td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>
-            Create a website having list of all practical and their individual
-            practical Page links .
-          </td>
-          <td>
-            <a href="./index.html">Practical-4</a>
-          </td>
-          <td>Checked</td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>
-            Create a Web-Page showing the use of Image-Map in the Web
-            Application.
-          </td>
-          <td>
-            <a href="./practical5.html">Practical-5</a>
-          </td>
-          <td>Checked</td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>Create a Card Layout using CSS layout properties.</td>
-          <td><a href="./practical6.html">Practical-6</a></td>
-          <td>Checked</td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>Create a Web Page Layout using div tags.</td>
-          <td><a href="./practical7.html">Practical-7</a></td>
-          <td>Checked</td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>8</td>
-          <td>
-            Create a Web Page having Fixed Navigation Bar with the given
-            content.
-          </td>
-          <td><a href="./practical8.html">Practical-8</a></td>
-          <td>Checked</td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>9</td>
-          <td>
-            Create a Responsive Web Layout with Responsive Navigation Bar.
-          </td>
-          <td><a href="./practical9.html">Practical-9</a></td>
-          <td>Checked</td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>10</td>
-          <td>Create a Responsive Side-Bar Navigation Menu.</td>
-          <td><a href="./practical10.html">Practical-10</a></td>
-          <td>Checked</td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
+          <tr>
+            <td><b>#</b></td>
+            <td><b>Practical Name</b></td>
+            <td><b>Link</b></td>
+            <td style="color: black;"><b>Status</b></td>
+            <td><b>Tools</b></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>
+              Create Your First Web page using: 1. HTML Editor 2. Online Sandbox
+              Environment. In the content, write "About Fullstack Web
+              Development".
+            </td>
+            <td><a href="./practical1.html">Practical-1</a></td>
+            <td>Checked</td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>
+              Create a web page showing output as Html Structure using character
+              Entities and span Tag.
+            </td>
+            <td>
+              <a href="./Practical2.html">Practical-2</a>
+            </td>
+            <td>Checked</td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Live your First Web-Page on Git-Hub</td>
+            <td>
+              <a
+                href="C:\Users\This PC\Desktop\FullstackGithub\FullStackPractical-3"
+                >Practical-3</a
+              >
+            </td>
+            <td>Checked</td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>
+              Create a website having list of all practical and their individual
+              practical Page links .
+            </td>
+            <td>
+              <a href="./index.html">Practical-4</a>
+            </td>
+            <td>Checked</td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>
+              Create a Web-Page showing the use of Image-Map in the Web
+              Application.
+            </td>
+            <td>
+              <a href="./practical5.html">Practical-5</a>
+            </td>
+            <td>Checked</td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Create a Card Layout using CSS layout properties.</td>
+            <td><a href="./practical6.html">Practical-6</a></td>
+            <td>Checked</td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Create a Web Page Layout using div tags.</td>
+            <td><a href="./practical7.html">Practical-7</a></td>
+            <td>Checked</td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>
+              Create a Web Page having Fixed Navigation Bar with the given
+              content.
+            </td>
+            <td><a href="./practical8.html">Practical-8</a></td>
+            <td>Checked</td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>
+              Create a Responsive Web Layout with Responsive Navigation Bar.
+            </td>
+            <td><a href="./practical9.html">Practical-9</a></td>
+            <td>Checked</td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>Create a Responsive Side-Bar Navigation Menu.</td>
+            <td><a href="./practical10.html">Practical-10</a></td>
+            <td>Checked</td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
 
-        <tr>
-          <td>11</td>
-          <td>Create a Responsive Footer Template.</td>
-          <td><a href="./practical11.html">Practical-11</a></td>
-          <td>Checked</td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            12
-          </td>
-          <td>
-            Create a Table that represent Live Practical Book Records .
-          </td>
-          <td><a href="./index.html">Practical-12</a></td>
-          <td style="color: green;">
-            Checked
-          </td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            13
-          </td>
-          <td>
-            Create a Custom Price Table Template.
-          </td>
-          <td><a href="./practical13.html">Practical-13</a></td>
-          <td style="color: red;">
-            Un-Checked
-          </td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            14
-          </td>
-          <td>
-            Create a Counter Page using JavaScript as per the attached
-            Templates.
-          </td>
-          <td><a href="./practical14.html">Practical-13</a></td>
-          <td style="color: red;">
-            Un-Checked
-          </td>
-          <td>
-            <i title="Edit" class="fa fa-pencil-square-o"></i>
-            <i title="Delete" class="fa fa-trash-o"></i>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          <tr>
+            <td>11</td>
+            <td>Create a Responsive Footer Template.</td>
+            <td><a href="./practical11.html">Practical-11</a></td>
+            <td>Checked</td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              12
+            </td>
+            <td>
+              Create a Table that represent Live Practical Book Records .
+            </td>
+            <td><a href="./index.html">Practical-12</a></td>
+            <td style="color: green;">
+              Checked
+            </td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              13
+            </td>
+            <td>
+              Create a Custom Price Table Template.
+            </td>
+            <td><a href="./practical13.html">Practical-13</a></td>
+            <td style="color: red;">
+              Un-Checked
+            </td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              14
+            </td>
+            <td>
+              Create a Counter Page using JavaScript as per the attached
+              Templates.
+            </td>
+            <td><a href="./practical14.html">Practical-13</a></td>
+            <td style="color: red;">
+              Un-Checked
+            </td>
+            <td>
+              <i title="Edit" class="fa fa-pencil-square-o"></i>
+              <i title="Delete" class="fa fa-trash-o"></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
+  <script>
+    var con = document.getElementById("content");
+    var load = document.getElementById("loader");
+
+    setTimeout(() => {
+      load.style.display = "none";
+      con.style.display = "block";
+    }, 3000);
+  </script>
 </html>
