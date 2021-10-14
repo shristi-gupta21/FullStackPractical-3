@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <style>
+      body {
+        background-color: grey;
+      }
+      body h1 {
+        text-align: center;
+        margin-top: 50px;
+        color: white;
+        font-size: 35px;
+      }
+
+      .btn {
+        background-color: yellow;
+        font-size: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .container {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 10%;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      #input {
+        background-color: grey;
+        font-size: 20px;
+      }
+
+      #counting {
+        font-size: 28px;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>COUNTER</h1>
+      <div class="container">
+        <button id="btn1" class="btn" onclick="substraction()" disabled>
+          -
+        </button>
+        <span id="counting">0</span>
+        <button id="btn2" class="btn" onclick="addition()">+</button>
+      </div>
+    </div>
+    <script>
+      var count = 0;
+
+      document.getElementById("counting").innerTextContent = count;
+      btn1.disabled = true;
+
+      function substraction() {
+        count -= 1;
+
+        document.getElementById("counting").innerHTML = count;
+        if (count == 0) {
+          btn1.disabled = true;
+        }
+      }
+      function addition() {
+        btn1.disabled = false;
+        count += 1;
+
+        document.getElementById("counting").innerHTML = count;
+      }
+    </script>
+  </body>
+</html>
