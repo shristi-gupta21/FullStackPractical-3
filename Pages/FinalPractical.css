@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 10px grey;
+  height: 60px;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header ul li {
+  list-style: none;
+  margin-top: -45px;
+  margin-left: 35px;
+  color: rgb(105, 101, 101);
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+header span {
+  color: rgb(87, 81, 81);
+  font-size: 30px;
+  display: flex;
+  padding-top: 10px;
+  padding-left: 95px;
+}
+
+header ul button {
+  background-color: rgb(41, 128, 243);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 10px;
+
+  margin-left: 25px;
+  font-size: 15px;
+}
+
+section {
+  display: flex;
+
+  justify-content: space-evenly;
+  background-color: beige;
+}
+section div {
+  height: 85vh;
+  width: 30%;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#div1 {
+  background-color: white;
+  text-align: center;
+  color: darkslategrey;
+}
+
+#div1 p {
+  padding: 20px;
+  color: darkslategrey;
+}
+
+#div2 {
+  background-color: rgb(41, 128, 243);
+  text-align: center;
+}
+#div3 {
+  background-color: rgb(41, 128, 243);
+  text-align: center;
+}
+
+#div2 p {
+  padding: 20px;
+  color: white;
+}
+#div3 p {
+  padding: 20px;
+  color: darkslategrey;
+}
+
+#div3 {
+  background-color: white;
+}
+
+section #div1 button {
+  border: 3px solid rgb(41, 128, 243);
+  color: rgb(41, 128, 243);
+  background-color: white;
+  margin-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+section #div3 button {
+  border: 3px solid rgb(41, 128, 243);
+  color: rgb(41, 128, 243);
+  background-color: white;
+  margin-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+section #div2 button {
+  border: 3px solid white;
+  color: white;
+  background-color: rgb(41, 128, 243);
+  margin-top: 25px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+#dropdown {
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+#dropdown li :hover > ul,
+#dropdown li:focus-within > ul,
+#dropdown li :hover,
+#dropdown:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+li {
+  cursor: pointer;
+}
